@@ -9,13 +9,13 @@ copy_img = cv2.imread("figures/yoshi.png")
 
 height, width, color_channel = original_img.shape
 
-float_image = original_img.astype(np.float32) / 255.0;
+float_image = original_img.astype(np.float32) / 255.0
 
 print("Data Type: ", float_image.dtype)
 
-print("Height: ", height);
-print("Width: ", width);
-print("Color Channel: ", color_channel);
+print("Height: ", height)
+print("Width: ", width)
+print("Color Channel: ", color_channel)
 
 startpoint_X = 500
 startpoint_Y = 500
@@ -29,7 +29,7 @@ endpoint = (endpoint_X, endpoint_Y)
 color = (0,0,255)
 
 #draw a red rectangle 10x10 px in the middle of the image
-red_rectangle = cv2.rectangle(copy_img, startpoint, endpoint, color, -1);
+red_rectangle = cv2.rectangle(copy_img, startpoint, endpoint, color, -1)
 
 for row in range(0, height, 5):
     # Set pixels in the row to black
@@ -44,7 +44,7 @@ mask_img = cv2.imread("figures/mask.png")
 #convert to HSV
 hsv_img = cv2.cvtColor(original_img, cv2.COLOR_BGR2HSV)
 
-mask_height, mask_width, _ = mask_img.shape;
+mask_height, mask_width, _ = mask_img.shape
 
 for y in range(mask_height):
     for x in range(mask_width):
