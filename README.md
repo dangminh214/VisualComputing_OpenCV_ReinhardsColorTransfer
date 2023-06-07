@@ -11,4 +11,6 @@ Using a mask.jpg to change the Hue value of pixels in the orginal image
 
 # Second Exercise: 
 Implementation of Reinhards Color Transfer, transfer the color of a input image into a target image 
+![image](https://github.com/dangminh214/VisualComputing_OpenCV_ReinhardsColorTransfer/assets/51837721/3f2917dd-a5e2-4df4-a221-64a4f9c55f64)
+
 
