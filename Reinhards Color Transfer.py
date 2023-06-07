@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 input = cv2.imread("figures/FigSource.png")
-target = cv2.imread("figures/Result_HSV.png")
+target = cv2.imread("figures/FigTarget.png")
 
 def reinhards_color_transfer(input, target):
     input = input.astype(np.float32) / 255.0
